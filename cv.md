@@ -4,7 +4,7 @@
 
 ## Elena Pokhvalennaya
 
-![photo](./img/my_photo.jpg)
+![photo](./img/photo.jpg)
 
 ---
 
