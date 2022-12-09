@@ -58,3 +58,12 @@ console.log(multiply(2,7));
 - English (A2)
 
 ---
+
+### Courses
+
+- Front End Basic at the Hillel IT school
+  - [Certificate](https://certificate.ithillel.ua/view/78479775)
+    ![certificate](./img/frontend-basic.png)
+- Front End Pro at the Hillel IT school
+  - [Certificate](https://certificate.ithillel.ua/view/94534675)
+    ![certificate](./img/frontend-pro.png)
