@@ -1,0 +1,440 @@
+body {
+  background-color: #a783a7;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  box-sizing: border-box;
+  background-color: rgb(223, 159, 223);
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.name-title {
+  margin: 5px 40px 0 0;
+}
+.header-link {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.header-nav {
+  margin: 0 0 0 0;
+  padding: 20px 0 20px;
+  /* border-bottom: 2px solid black; */
+}
+.header:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: -20px;
+}
+.header-nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.header-nav-list-item {
+  margin: 0 40px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header-nav-list-item:last-child {
+  margin: 0;
+}
+.header-nav-list-item-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  align-self: start;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.header-nav-list-item-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; /* Высота линии */
+  background-color: #913491; /* Цвет подчеркивания при исчезании линии*/
+  transition: 0.5s; /* Время эффекта */
+}
+.header-nav-list-item-link:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px; /* Высота линии */
+  background-color: #913491; /* Цвет подчеркивания при появлении линии*/
+  transition: 0.5s; /* Время эффекта */
+}
+.main-block {
+  padding: 20px 0;
+  display: flex;
+}
+.aside-block {
+  margin: 0 40px 0 0;
+}
+.image-block {
+  margin: 0 0 20px 0;
+}
+.my-photo {
+  width: 305px;
+  border-radius: 7px;
+}
+#about-me {
+  border: 2px solid #913491;
+  border-radius: 7px;
+  background-color: #efc9ef;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+.about-me-title {
+  margin: 0 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about-me-info {
+  margin: 0 0 0 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#contact-me {
+  border: 2px solid #913491;
+  border-radius: 7px;
+  background-color: #efc9ef;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+.contact-me-title {
+  margin: 0 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-list {
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+.contact-list-item {
+  list-style-type: none;
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-list-item-link {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.contact-list-item-link:hover {
+  color: #913491;
+}
+.telegram {
+  position: relative;
+}
+.telegram::before {
+  background-image: url(./img/telegram.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.gmail {
+  position: relative;
+}
+.gmail::before {
+  background-image: url(./img/gmail.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.phone {
+  position: relative;
+}
+.phone::before {
+  background-image: url(./img/phone.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.discord {
+  position: relative;
+}
+.discord::before {
+  background-image: url(./img/discord.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.github {
+  position: relative;
+}
+.github::before {
+  background-image: url(./img/github.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+#my-skills {
+  border: 2px solid #913491;
+  border-radius: 7px;
+  background-color: #efc9ef;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+.my-skills-title {
+  margin: 0 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.my-skills-list {
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+.my-skills-list-item {
+  list-style-type: none;
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.html {
+  position: relative;
+}
+.html::before {
+  background-image: url(./img/html.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.css {
+  position: relative;
+}
+.css::before {
+  background-image: url(./img/css.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.js {
+  position: relative;
+}
+.js::before {
+  background-image: url(./img/js.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.node {
+  position: relative;
+}
+.node::before {
+  background-image: url(./img/node.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.react {
+  position: relative;
+}
+.react::before {
+  background-image: url(./img/react.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.type {
+  position: relative;
+}
+.type::before {
+  background-image: url(./img/type.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+#my-code {
+  width: 305px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: #913491;
+}
+.my-code-example {
+  color: #efc9ef;
+}
+.my-code-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #efc9ef;
+  margin: 0 0 10px 0;
+}
+#my-projects {
+  margin: 0 0 20px 0;
+  border-radius: 7px;
+  padding: 10px;
+  border: 2px solid #913491;
+  background-color: #efc9ef;
+}
+.my-projects-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 10px 0;
+}
+.my-projects-list {
+  margin: 0 0 0 0;
+  padding: 0;
+  display: flex;
+}
+.my-projects-list-item {
+  list-style-type: none;
+  text-align: center;
+}
+.my-projects-list-item-link {
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.my-projects-list-item-link:hover {
+  color: #913491;
+}
+.project-img {
+  width: 290px;
+  margin: 0 0 10px 0;
+}
+#my-education {
+  border-radius: 7px;
+  padding: 10px;
+  border: 2px solid #913491;
+  background-color: #efc9ef;
+}
+.my-education-title {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.my-education-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.my-courses-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.my-courses-list-item {
+  list-style-type: none;
+  text-align: center;
+}
+.courses-list-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.certificate-img {
+  width: 290px;
+  margin: 0 0 10px 0;
+}
+.certificate-link {
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.certificate-link:hover {
+  color: #913491;
+}
+.footer-block {
+  padding: 20px 100px;
+  position: relative;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.footer-block::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 1px;
+  background-color: black;
+  top: 0;
+  left: -20px;
+}
+.created-year {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.languages-info {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.languages-list {
+  margin: 0;
+  padding: 0;
+}
+.languages-list-item {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}

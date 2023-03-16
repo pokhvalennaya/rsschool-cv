@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"></meta> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> 
+    <link rel="stylesheet" href="./style.css"></meta> 
+    <title>HTML, CSS &amp; Git Basics</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="name-title-block">
+          <h1 class="name-title">
+            <a href="#" class="header-link"> Elena Pokhvalennaya</a>
+          </h1>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a href="#about-me" class="header-nav-list-item-link">about</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#contact-me" class="header-nav-list-item-link"
+                >contact</a
+              >
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#my-skills" class="header-nav-list-item-link">skills</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#my-code" class="header-nav-list-item-link">code</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#my-projects" class="header-nav-list-item-link"
+                >projects</a
+              >
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#my-education" class="header-nav-list-item-link"
+                >education</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-block">
+        <aside class="aside-block">
+          <div class="image-block">
+            <img class="my-photo" src="./img/my-photo.jpg" alt="author-photo"></img>
+          </div>
+          <div id="my-code">
+            <h2 class="my-code-title">Code example</h2>
+            <pre><code class="my-code-example">
+              
+function createCalculator(startValue) { 
+  let value = startValue; 
+  return { 
+    sum: function (newValue) { 
+      value += newValue; 
+      return value; 
+    }, 
+    mult: function (newValue) { 
+      value *= newValue;
+      return value;
+    },
+    sub: function (newValue) {
+      value -= newValue;
+      return value;
+    },
+    div: function (newValue) {
+      value /= newValue;
+      return value; 
+    }, 
+  }; 
+}
+            </code></pre>
+          </div>
+        </aside>
+
+        <div class="info-block">
+          <div id="about-me">
+            <h2 class="about-me-title">About me</h2>
+            <p class="about-me-info">
+              My name is Lena and I`m 20 years old. I`m from Kharkov and now I`m
+              a student of KhNURE. I do not have work experience, but I want to
+              become a professional developer. I have such qualities as
+              responsibility, purposefulness, friendliness, I like to learn
+              something new and work in a team.
+            </p>
+          </div>
+          <div id="contact-me">
+            <h2 class="contact-me-title">Contact me</h2>
+            <ul class="contact-list">
+              <li class="contact-list-item phone">
+                Phone:
+                <a href="tel:+380668794971" class="contact-list-item-link"
+                  >+380668794971</a
+                >
+              </li>
+              <li class="contact-list-item gmail">
+                Gmail:
+                <a
+                  href="mailto:elena.pokhvalennaya@gmail.com"
+                  class="contact-list-item-link"
+                  target="_blank"
+                  >elena.pokhvalennaya@gmail.com</a
+                >
+              </li>
+              <li class="contact-list-item telegram">
+                Telegram:
+                <a
+                  href="tg://resolve?domain=lpkhvln"
+                  class="contact-list-item-link"
+                  target="_blank"
+                  >@lpkhvln</a
+                >
+              </li>
+              <li class="contact-list-item discord">
+                Discord:
+                <a
+                  href="https://discordapp.com/users/1012861595648544828/"
+                  class="contact-list-item-link"
+                  target="_blank"
+                  >Lena (@pokhvalennaya)</a
+                >
+              </li>
+              <li class="contact-list-item github">
+                GitHub:
+                <a
+                  href="https://github.com/pokhvalennaya"
+                  class="contact-list-item-link"
+                  target="_blank"
+                  >@pokhvalennaya</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="my-skills">
+            <h2 class="my-skills-title">My skills</h2>
+            <ul class="my-skills-list">
+              <li class="my-skills-list-item html">HTML</li>
+              <li class="my-skills-list-item css">CSS</li>
+              <li class="my-skills-list-item js">
+                JavaScript (basic knowledge and skills)
+              </li>
+              <li class="my-skills-list-item node">Node.js (basic)</li>
+              <li class="my-skills-list-item react">React</li>
+              <li class="my-skills-list-item type">TypeScript (basic)</li>
+            </ul>
+          </div>
+          <div id="my-projects">
+            <h2 class="my-projects-title">My projects</h2>
+            <ul class="my-projects-list">
+              <li class="my-projects-list-item">
+                <img
+                  src="./img/project_1.png"
+                  alt="project-image"
+                  class="project-img"></img>
+                <a
+                  href="https://pokhvalennaya.github.io/project_1/"
+                  class="my-projects-list-item-link"
+                  target="_blank"
+                >
+                  Project link
+                </a>
+              </li>
+              <li class="my-projects-list-item">
+                <img
+                  src="./img/project_2.png"
+                  alt="project-image"
+                  class="project-img"></img>
+                <a
+                  href="https://pokhvalennaya.github.io/project_2/"
+                  class="my-projects-list-item-link"
+                  target="_blank"
+                >
+                  Project link
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="my-education">
+            <h2 class="my-education-title">My education</h2>
+            <p class="my-education-info">
+              Now I`m a 4th year student of the Kharkiv National University of
+              Radioelectonics, specialty 172 telecommunications and
+              radioengineering, educational program information and network
+              engineering. <br />Also I graduated from courses at Hillel IT
+              School.
+            </p>
+            <ul class="my-courses-list">
+              <li class="my-courses-list-item">
+                <p class="courses-list-info">Front End Basic</p>
+                <img
+                  src="./img/frontend-basic.png"
+                  alt="certificate"
+                  class="certificate-img"></img>
+                <a
+                  href="https://certificate.ithillel.ua/view/78479775"
+                  class="certificate-link"
+                  target="_blank"
+                >
+                  Certificate link
+                </a>
+              </li>
+              <li class="my-courses-list-item">
+                <p class="courses-list-info">Front End Pro</p>
+                <img
+                  src="./img/frontend-pro.png"
+                  alt="certificate"
+                  class="certificate-img"
+                />
+                <a
+                  href="https://certificate.ithillel.ua/view/94534675https://certificate.ithillel.ua/view/78479775"
+                  class="certificate-link"
+                  target="_blank"
+                >
+                  Certificate link
+                </a>
+              </li>
+            </ul>
+            <h3 class="languages-info">Languages</h3>
+            <ul class="languages-list">
+              <li class="languages-list-item">English: A2;</li>
+              <li class="languages-list-item">Ukrainian: native speaker;</li>
+              <li class="languages-list-item">Russian: native speaker.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-block">
+        <ul class="footer-list">
+          <li class="contact-list-item">
+            <a
+              href="https://github.com/pokhvalennaya"
+              class="contact-list-item-link"
+              target="_blank"
+              ><img src="./img/gh-logo.png" alt="github-logotype"
+            /></a>
+          </li>
+          <li class="contact-list-item">
+            <a href="https://rs.school/js/" class="logo-link" target="_blank"
+              ><img src="./img/rs-school-logo.png" alt="rs-school-logotype"
+            /></a>
+          </li>
+          <li class="contact-list-item">
+            <p class="created-year">Created in 2022</p>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
