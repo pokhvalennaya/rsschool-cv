@@ -1,11 +1,12 @@
 body {
-  background-color: #a783a7;
+  background-color: rgb(217, 175, 217);
+background-image: linear-gradient(45deg, #D9AFD9 0%, #97D9E1 100%);
+
   padding: 0;
   margin: 0;
 }
 .wrapper {
   box-sizing: border-box;
-  background-color: rgb(223, 159, 223);
   width: 1000px;
   margin: 0 auto;
   padding: 20px 20px 0;
@@ -15,7 +16,6 @@ body {
   padding: 0;
   position: relative;
   display: flex;
-  /* justify-content: space-between; */
 }
 .name-title {
   margin: 5px 40px 0 0;
@@ -29,23 +29,11 @@ body {
 .header-nav {
   margin: 0 0 0 0;
   padding: 20px 0 20px;
-  /* border-bottom: 2px solid black; */
-}
-.header:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 1000px;
-  height: 1px;
-  background-color: black;
-  bottom: 0;
-  left: -20px;
 }
 .header-nav-list {
   margin: 0;
   padding: 0;
   display: flex;
-  /* justify-content: space-between; */
 }
 .header-nav-list-item {
   margin: 0 40px 0 0;
@@ -74,9 +62,9 @@ body {
   right: 0;
   bottom: -3px;
   width: 0;
-  height: 2px; /* Высота линии */
-  background-color: #913491; /* Цвет подчеркивания при исчезании линии*/
-  transition: 0.5s; /* Время эффекта */
+  height: 2px; 
+  background-color: #913491; 
+  transition: 0.5s; 
 }
 .header-nav-list-item-link:hover:after {
   content: "";
@@ -85,9 +73,9 @@ body {
   position: absolute;
   left: 0;
   bottom: -3px;
-  height: 2px; /* Высота линии */
-  background-color: #913491; /* Цвет подчеркивания при появлении линии*/
-  transition: 0.5s; /* Время эффекта */
+  height: 2px;
+  background-color: #913491; 
+  transition: 0.5s;
 }
 .main-block {
   padding: 20px 0;
@@ -104,9 +92,9 @@ body {
   border-radius: 7px;
 }
 #about-me {
-  border: 2px solid #913491;
+  border: 2px solid rgb(179, 90, 179, 0.7);
+  background-color: transparent;
   border-radius: 7px;
-  background-color: #efc9ef;
   padding: 10px;
   margin: 0 0 20px 0;
 }
@@ -120,9 +108,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 #contact-me {
-  border: 2px solid #913491;
   border-radius: 7px;
-  background-color: #efc9ef;
+  border: 2px solid rgb(179, 90, 179, 0.7);
+  background-color: transparent;
   padding: 10px;
   margin: 0 0 20px 0;
 }
@@ -211,9 +199,9 @@ body {
   width: 20px;
 }
 #my-skills {
-  border: 2px solid #913491;
   border-radius: 7px;
-  background-color: #efc9ef;
+  border: 2px solid rgb(179, 90, 179, 0.7);
+  background-color: transparent;
   padding: 10px;
   margin: 0 0 20px 0;
 }
@@ -303,28 +291,55 @@ body {
   top: 0;
   width: 20px;
 }
+.mongo {
+  position: relative;
+}
+.mongo::before {
+  background-image: url(./img/mongo.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.express {
+  position: relative;
+}
+.express::before {
+  background-image: url(./img/express.png);
+  content: "";
+  height: 20px;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
 #my-code {
   width: 305px;
   box-sizing: border-box;
   border-radius: 7px;
   padding: 10px;
   border: 2px solid black;
-  background-color: #913491;
+  background-color: #000;
 }
 .my-code-example {
-  color: #efc9ef;
+  color: rgb(217, 175, 217);
 }
 .my-code-title {
   font-family: Arial, Helvetica, sans-serif;
-  color: #efc9ef;
-  margin: 0 0 10px 0;
+  color: rgb(217, 175, 217);
+  margin: 0 0;
+}
+pre{
+  margin: 0;
 }
 #my-projects {
   margin: 0 0 20px 0;
   border-radius: 7px;
   padding: 10px;
-  border: 2px solid #913491;
-  background-color: #efc9ef;
+  border: 2px solid rgb(179, 90, 179, 0.7);
+  background-color: transparent;
 }
 .my-projects-title {
   font-family: Arial, Helvetica, sans-serif;
@@ -355,8 +370,8 @@ body {
 #my-education {
   border-radius: 7px;
   padding: 10px;
-  border: 2px solid #913491;
-  background-color: #efc9ef;
+  border: 2px solid rgb(179, 90, 179, 0.7);
+  background-color: transparent;
 }
 .my-education-title {
   margin: 0 0 10px 0;
@@ -406,16 +421,6 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-}
-.footer-block::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 1000px;
-  height: 1px;
-  background-color: black;
-  top: 0;
-  left: -20px;
 }
 .created-year {
   font-family: Arial, Helvetica, sans-serif;
